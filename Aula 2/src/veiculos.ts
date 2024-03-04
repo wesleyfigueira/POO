@@ -19,7 +19,8 @@ class veiculos {
     }
 }
 
-const polo =new veiculos("Volkswagen","Polo",63800,2019)
+const polo =new veiculos("Volkswagen" ,"Polo",63800,2019);
 
 
-polo.avaliacao()
+
+polo.avaliacao();
