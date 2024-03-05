@@ -1,13 +1,14 @@
 class poupanca extends contaGeral{
 
-    private taxaDeRendimento:number;
+    taxaDeRendimento:number;
 
-    set taxaDeRendimento(valor:number){
-        if (valor <=0)
-        return;
-        this.taxaDeRendimento = valor;
+    sacar(valor: number): boolean {
+        let novoSaldo = this.saldo - valor;
+
+        if (novoSaldo <0)
+        return false;
     }
-
+    return super.sacar(valor);
 }
 let p = new poupanca();
 console.log(p.taxaDeRendimento);

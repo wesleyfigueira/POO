@@ -5,7 +5,7 @@ class contaGeral{
     movimentacoes: string[] = [];
 
     
-    sacar(valor:number): void{
+    sacar(valor:number): boolean{
 
         // calculo de retirada
         let novoSaldo = this.saldo - valor ;
@@ -16,7 +16,8 @@ class contaGeral{
 
         //registrar movimentação
         this.movimentacoes.push(mensagemExtrato);
-
+        
+        return false;
     }
     consultarSaldo (): number{
         return this.saldo;

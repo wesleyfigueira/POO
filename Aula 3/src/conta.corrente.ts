@@ -1,12 +1,14 @@
-class contaCorrente extends contaGeral{
+ 
+ 
+ export class contaCorrente extends contaGeral{
     
    chequeEspecial:number = -500;
 
-   sacar(valor: number): void {
+   sacar(valor: number): boolean {
        let novoSaldo = this.saldo - valor;
 
        if(novoSaldo < this.chequeEspecial){
-        console.log(`você não tem limite para realizar esta operação de saque `)
+        return false;
 
        }else{
         super.sacar(valor);
