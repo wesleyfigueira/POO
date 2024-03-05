@@ -1,12 +1,13 @@
 class poupanca extends contaGeral{
 
-    taxaDeRendimento:number;
+    private taxaDeRendimento:number;
 
-
-    //depositar
-    //consultar saldo
-    //sacar
-    //consultar extrato
-    // Calcular Rendimento rendimento (mensal)
+    set taxaDeRendimento(valor:number){
+        if (valor <=0)
+        return;
+        this.taxaDeRendimento = valor;
+    }
 
 }
+let p = new poupanca();
+console.log(p.taxaDeRendimento);
