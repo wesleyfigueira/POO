@@ -10,7 +10,7 @@ class contaGeral{
         // calculo de retirada
         let novoSaldo = this.saldo - valor ;
         // mensagem de retirada
-        let mensagemExtrato =`você sacou ${valor} | Saldo anterior: | ${this.saldo}  |saldo atualizado:| ${novoSaldo}`;
+        let mensagemExtrato =`você sacou ${valor} | Saldo anterior: | ${this.saldo} |  |saldo atualizado:| ${novoSaldo}`;
          
         this.saldo = novoSaldo;
 
