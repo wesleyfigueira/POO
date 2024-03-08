@@ -1,24 +1,26 @@
+//Criar Nova Tarefa
+//concluir tarefa
+// Remover uma tarefa
+//imprimir lista de tarefas
 
-class tarefa{
-    tarefa:string;
+
+class ListaDeTarefas {
+
+    tarefa: string;
     id:number;
-    listaDetarefas?: string[]=[]
+    status:boolean;
 
-    constructor( tarefa:string,id:number,){
-        tarefa =this.tarefa
-        id = this.id
+    constructor(tarefa:string, id:number,status:boolean) {
+        this.tarefa =tarefa;
+        this.id =id;
+        this.status=status
     }
 
-
-
+    task(){
+        console.log(`${this.modelo}`)
+    }
 }
 
-class CriarTarefa{
+const meucarro = new Veiculo("polo",30,"volkswagen");
 
-    constructor(id:number, tarefa:string){
-        id= this.id.length +1
-        let novatarefa= this.tarefa
-        this.listaDeTarefa.push(novatarefa);
-    }
-
-    }
+meucarro.montar()
