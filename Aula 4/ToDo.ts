@@ -3,9 +3,13 @@
 class ToDoList{
 
     taskList:string [];
+    id:number;
+    idInicial:number= 0
 
     constructor(){
         this.taskList =[]
+        this.id= this.idInicial;
+
     }
 
     addTask(tarefa:string){
@@ -13,6 +17,21 @@ class ToDoList{
         console.log(`Tarefa "${tarefa}" criada.`);
 
     }
+
+    readTask(){
+        console.log("Tasks:");
+
+        this.taskList.forEach((task,i)=>{
+            console.log(`${i + 1}. ${task}`);
+        });
+
+    }
+
+    upDateTask(){
+        this.taskList.findIndex()
+    }
+
+    // tarefa Read
 }
 
 const listaDeTarefas = new ToDoList();
@@ -20,6 +39,7 @@ listaDeTarefas.addTask("comprar Pão");
 listaDeTarefas.addTask("comprar Ovo");
 listaDeTarefas.addTask("comprar Manteiga");
 //concluir tarefa
+
 // Remover uma tarefa
 //imprimir lista de tarefas
 
