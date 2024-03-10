@@ -5,10 +5,12 @@ class ToDoList{
     taskList:string [];
     id:number;
     idInicial:number= 0
+    status: boolean;
 
     constructor(){
         this.taskList =[]
         this.id= this.idInicial;
+        this.status = false;
 
     }
 
