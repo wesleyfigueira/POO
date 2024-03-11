@@ -46,6 +46,7 @@ class ToDoList {
 ToDoList.addTask("Comprar Pão");
 ToDoList.addTask("Comprar Ovo");
 ToDoList.addTask("Comprar Manteiga");
+ToDoList.addTask("Comprar Computador novo")
 
 ToDoList.readTask();
 
