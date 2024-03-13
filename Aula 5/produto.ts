@@ -36,6 +36,7 @@ class Produto{
 
 Produto.addProdutos("camisa",190.99,"camisa polo vermelha");
 Produto.addProdutos("camisa",199.99,"camisa polo cor Azul");
+produto.addProdutos("short",90.90,"Short de praia preto")
 Produto.showProdutos();
 
 
